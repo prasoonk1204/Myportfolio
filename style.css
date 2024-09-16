@@ -361,7 +361,10 @@ body.dark-mode #pk{
     font-size: 1.2em;
   }
   .block{
-    animation-range: entry 0% cover 30%;
+    animation-range: entry 0% cover 40%;
+  }
+  .block1{
+    animation-range: entry 0% cover 20%;
   }
   
 }
@@ -439,6 +442,11 @@ header, footer, .nav_item, .linksimage {
 }
 
 .block{
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+.block1{
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 20%;
