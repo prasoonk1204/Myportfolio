@@ -1,57 +1,69 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-16">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css"/>
+  <link rel="stylesheet" href="./style.css" />
   <script defer src="./script.js"></script>
   <title>My Portfolio</title>
 </head>
-<body>
-  
-  <header class="header">
-  <div class="logo"><h2>PK.</h2></div>
 
-  <nav class="nav-desktop">
-    <a href="#aboutme" class="nav_item">About</a>
+<body>
+
+  <header class="header">
+    <div class="logo">
+      <h2>PK.</h2>
+    </div>
+
+    <nav class="nav-desktop">
+      <a href="#aboutme" class="nav_item">About</a>
+      <a href="#projects" class="nav_item">Projects</a>
+      <a href="#skills" class="nav_item">Skills</a>
+      <a href="#achieve" class="nav_item">Achievements</a>
+    </nav>
+
+    <div class="hhh">
+
+      <img src="assets/light.png" class="theme-toggle th" onclick="toggleTheme()" data-light-src="assets/light.png"
+        data-dark-src="assets/dark.png">
+      <img src="assets/haml.png" class="hamburger" data-light-src="assets/haml.png" data-dark-src="assets/hamd.png"
+        alt="menu" onclick="toggleMenu()">
+
+    </div>
+  </header>
+
+  <nav id="menu" class="hidden">
+    <a href="#aboutme" class="nav_item" id="abme">About</a>
     <a href="#projects" class="nav_item">Projects</a>
     <a href="#skills" class="nav_item">Skills</a>
     <a href="#achieve" class="nav_item">Achievements</a>
   </nav>
 
-  <div class="hhh">
- 
-    <img src="assets/light.png" class="theme-toggle th" onclick="toggleTheme()" data-light-src="assets/light.png" data-dark-src="assets/dark.png">
-    <img src="assets/haml.png" class="hamburger" data-light-src="assets/haml.png" data-dark-src="assets/hamd.png" alt="menu" onclick="toggleMenu()">
-    
-  </div>
-  </header>
-
-<nav id="menu" class="hidden">
-  <a href="#aboutme" class="nav_item" id="abme">About</a>
-  <a href="#projects" class="nav_item">Projects</a>
-  <a href="#skills" class="nav_item">Skills</a>
-  <a href="#achieve" class="nav_item">Achievements</a>
-</nav>
-  
   <div id="aboutme"> </div>
   <section class="aboutme block">
     <div class="image">
-      <img src="assets/img1l.png" class="img1" data-light-src="assets/img1l.png" data-dark-src="assets/img1d.png" id="about">
+      <img src="assets/img1l.png" class="img1" data-light-src="assets/img1l.png" data-dark-src="assets/img1d.png"
+        id="about">
     </div>
-    
-    <h1 class="intro block">Hi there! I'm <span id="pk">Prasoon Kumar</span>.</h1>
-    <p class="details block">A first year student, studying Computer Scince. Currently I'm focused on learing full stack develepment and UI/UX designing. Take a look around my portfolio and let's connect!</p>
-    
+
+    <h1 class="intro block">Hi there! I'm <span id="pk">Prasoon Kumar</span></h1>
+    <p class="details block">A first year student, studying Computer Scince. Currently I'm focused on learing full stack
+      develepment and UI/UX designing. Take a look around my portfolio and let's connect!</p>
+
     <section class="links block">
       <a href="https://www.github.com/prasoonk1204" target="_blank">
-      <img src=https://img.shields.io/badge/github-%232E3440.svg?&style=for-the-badge&logo=github&logoColor=white alt=github style="margin-bottom: 5px; border-radius:20px;" class="plink111"/>
+        <img src=https://img.shields.io/badge/github-%232E3440.svg?&style=for-the-badge&logo=github&logoColor=white
+          alt=github style="margin-bottom: 5px; border-radius:20px;" class="plink111" />
       </a>
       <a href="https://www.linkedin.com/in/prasoon1204" target="_blank">
-      <img src="https://img.shields.io/badge/linkedin-%232E3440.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt=linkedin style="margin-bottom: 5px;border-radius:20px" class="plink111"/>
+        <img
+          src="https://img.shields.io/badge/linkedin-%232E3440.svg?&style=for-the-badge&logo=linkedin&logoColor=white"
+          alt=linkedin style="margin-bottom: 5px;border-radius:20px" class="plink111" />
       </a>
       <a href="mailto:prasoonkumar467@gmail.com" target="_blank">
-      <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt=gmail style="margin-bottom: 5px;border-radius:20px" class="plink111"/>
+        <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt=gmail
+          style="margin-bottom: 5px;border-radius:20px" class="plink111" />
       </a>
     </section>
   </section>
@@ -60,30 +72,70 @@
   <h1 class="intro block">Projects</h1>
   <section class="project_sec" id="proje">
 
-    <div class="project p1 block"> 
-      <div class="p_img"><img src="./assets/portl.png" class="img2" data-light-src="./assets/portl.png" data-dark-src="./assets/portd.png"></div>
+    <div class="project p1 block">
+      <div class="p_img"><img src="./assets/aom.png" class="img2" data-light-src="./assets/aom.png"
+          data-dark-src="./assets/aom.png"></div>
       <div class="pp">
-        <h2 class="p_name">This Portfolio</h2>
+        <h2 class="p_name">Art Of Minimalism</h2>
         <div class="linksimages">
-          <a href="https://prasoonk.vercel.app" target="_blank"><img src="assets/linkl.png" width="20px" height="20px" data-light-src="assets/linkl.png" data-dark-src="assets/linkd.png"></a>
-          <a href="https://github.com/prasoonk1204/Myportfolio" target="_blank"><img src="assets/gitl.png" width="25px" height="25px" data-light-src="assets/gitl.png" data-dark-src="assets/gitd.png"></a>
+          <a href="https://art-of-minimalism.vercel.app" target="_blank"><img src="assets/linkl.png" width="20px" height="20px"
+              data-light-src="assets/linkl.png" data-dark-src="assets/linkd.png"></a>
+          <a href="https://github.com/prasoonk1204/Art-Of-Minimalism" target="_blank"><img src="assets/gitl.png" width="25px"
+              height="25px" data-light-src="assets/gitl.png" data-dark-src="assets/gitd.png"></a>
         </div>
       </div>
-      <p class="p_desc">A personal portfolio showcasing my work, skills, and experiences.</p>
+      <p class="p_desc">A collection of small projects showcasing my practice of html and css</p>
       <div class="p_tech">
         <div class="p_tech_item">HTML</div>
         <div class="p_tech_item">CSS</div>
-        <div class="p_tech_item">JavaScript</div>
+      </div>
+    </div>
+    <div class="project p1 block">
+      <div class="p_img"><img src="./assets/prem.png" class="img2" data-light-src="./assets/prem.png"
+          data-dark-src="./assets/prem.png"></div>
+      <div class="pp">
+        <h2 class="p_name">Premier</h2>
+        <div class="linksimages">
+          <a href="https://prasoonk1204.github.io/Premier/" target="_blank"><img src="assets/linkl.png" width="20px" height="20px"
+              data-light-src="assets/linkl.png" data-dark-src="assets/linkd.png"></a>
+          <a href="https://github.com/prasoonk1204/Premier" target="_blank"><img src="assets/gitl.png" width="25px"
+              height="25px" data-light-src="assets/gitl.png" data-dark-src="assets/gitd.png"></a>
+        </div>
+      </div>
+      <p class="p_desc">A clean and stylish fashion website</p>
+      <div class="p_tech">
+        <div class="p_tech_item">HTML</div>
+        <div class="p_tech_item">CSS</div>
+      </div>
+    </div>
+    <div class="project p1 block">
+      <div class="p_img"><img src="./assets/bs.png" class="img2" data-light-src="./assets/bs.png"
+          data-dark-src="./assets/bs.png"></div>
+      <div class="pp">
+        <h2 class="p_name">Bharatiya Sabhyata</h2>
+        <!-- <div class="linksimages">
+          <a href="https://prasoonk.vercel.app" target="_blank"><img src="assets/linkl.png" width="20px" height="20px"
+              data-light-src="assets/linkl.png" data-dark-src="assets/linkd.png"></a>
+          <a href="https://prasoonk.vercel.app" target="_blank"><img src="assets/gitl.png" width="25px"
+              height="25px" data-light-src="assets/gitl.png" data-dark-src="assets/gitd.png"></a>
+        </div> -->
+      </div>
+      <p class="p_desc">An app showcasing India's rich cultural heritage with interactive features like a calendar, map, and community posts.</p>
+      <div class="p_tech">
+        <div class="p_tech_item">React-Native</div>
+        <div class="p_tech_item">Expo</div>
       </div>
     </div>
 
-    <div class="project p1 block"> 
-      <div class="p_img"><img src="./assets/plp.png" class="img2" ></div>
+    <div class="project p1 block">
+      <div class="p_img"><img src="./assets/plp.png" class="img2"></div>
       <div class="pp">
         <h2 class="p_name">Product Landing Page</h2>
         <div class="linksimages">
-          <a href="https://prasoonk1204.github.io/Product-Landing-Page" target="_blank"><img src="assets/linkl.png" width="20px" height="20px" data-light-src="assets/linkl.png" data-dark-src="assets/linkd.png"></a>
-          <a href="https://github.com/prasoonk1204/Product-Landing-Page" target="_blank"><img src="assets/gitl.png" width="25px" height="25px" data-light-src="assets/gitl.png" data-dark-src="assets/gitd.png"></a>
+          <a href="https://prasoonk1204.github.io/Product-Landing-Page" target="_blank"><img src="assets/linkl.png"
+              width="20px" height="20px" data-light-src="assets/linkl.png" data-dark-src="assets/linkd.png"></a>
+          <a href="https://github.com/prasoonk1204/Product-Landing-Page" target="_blank"><img src="assets/gitl.png"
+              width="25px" height="25px" data-light-src="assets/gitl.png" data-dark-src="assets/gitd.png"></a>
         </div>
       </div>
       <p class="p_desc">A single-page website with responsiveness across platforms.</p>
@@ -91,26 +143,27 @@
         <div class="p_tech_item">HTML</div>
         <div class="p_tech_item">CSS</div>
       </div>
-    </div> 
-    
-    <div class="project p2 block"> 
-      <div class="p_img"><img src="./assets/wda.png" class="img2" ></div>
+    </div>
+
+    <div class="project p2 block">
+      <div class="p_img"><img src="./assets/wda.png" class="img2"></div>
       <div class="pp">
         <h2 class="p_name">Web Design Agency</h2>
         <div class="linksimages">
-          <a href="https://prasoonk1204.github.io/WebDesignAgency/" target="_blank"><img src="assets/linkl.png" width="20px" height="20px" data-light-src="assets/linkl.png" data-dark-src="assets/linkd.png"></a>
-          <a href="https://github.com/prasoonk1204/WebDesignAgency" target="_blank"><img src="assets/gitl.png" width="25px" height="25px" data-light-src="assets/gitl.png" data-dark-src="assets/gitd.png"></a>
-        </div> 
+          <a href="https://prasoonk1204.github.io/WebDesignAgency/" target="_blank"><img src="assets/linkl.png"
+              width="20px" height="20px" data-light-src="assets/linkl.png" data-dark-src="assets/linkd.png"></a>
+          <a href="https://github.com/prasoonk1204/WebDesignAgency" target="_blank"><img src="assets/gitl.png"
+              width="25px" height="25px" data-light-src="assets/gitl.png" data-dark-src="assets/gitd.png"></a>
+        </div>
       </div>
       <p class="p_desc">A web design agency website with interactive and user-friendly interface.(under work)</p>
       <div class="p_tech">
         <div class="p_tech_item">HTML</div>
         <div class="p_tech_item">CSS</div>
-        <div class="p_tech_item">JavaScript</div>
       </div>
     </div>
   </section>
-  
+
   <div id="skills"></div>
   <section class="skill_sec">
     <h1 class="intro block">Skills</h1>
@@ -123,25 +176,34 @@
       <div class="s_item">React-Native</div>
       <div class="s_item">Expo</div>
       <div class="s_item">C++</div>
-      <div class="s_item">Supabase</div>
-      <div class="s_item">VS Code</div>
       <div class="s_item">Git/GitHub</div>
     </div>
   </section>
-  
+
   <div id="achieve"> </div>
   <section class="achieve_sec">
-    <h1 class="intro block">Achievements</h1>
+    <h1 class="intro block">Open-source Contribution</h1>
     <div class="achieve_item block">
-      <h2>Smart India Hackathon</h2>
-      <p class="a_p">Ranked <b>13th</b> out of 61 teams in the Internal Hackathon of Smart India Hackathon (SIH) 2024 at Asansol Engineering College, as a key member of Team Solver Squad.</p>
+      <h2>GirlScript Summer of Code Extd. 2024</h2>
+      <p class="a_p">
+        Contributed to multiple open-source repositories by adding new features, enhancing user interfaces, and
+        improving
+        navigation across projects. Focused on both functionality and design to create a better user experience.
+      </p>
+    </div>
+    <div class="achieve_item block">
+      <h2>Hacktoberfest</h2>
+      <p class="a_p">
+        Worked on open-source projects by implementing feature improvements, refining UI/UX, and enhancing project
+        accessibility. Successfully completed Hacktoberfest with impactful pull requests.
+      </p>
     </div>
   </section>
 
 
   <div id="send"></div>
   <section class="send_sec">
-    <h1 class="intro block1">Send me a message</h1>
+    <h1 class="intro block1">Get in touch</h1>
     <div class="testt block1">
       <h3>Coming soon...</h3>
     </div>
@@ -149,7 +211,8 @@
 
   <footer class="footer ">
     <p>© 2024 Prasoon Kumar</p>
-    
+
   </footer>
 </body>
+
 </html>

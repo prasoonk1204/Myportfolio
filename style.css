@@ -48,7 +48,6 @@ body {
   height: 35px;
   width: 35px;
   cursor: pointer;
-  /* padding-right: 10px; */
 }
 
 .nav-desktop {
@@ -148,7 +147,7 @@ body {
   margin: 10px;
   padding: 10px;
   text-align: center;
-  box-shadow:cornflowerblue/*#7ea6f4*/ 0px 0px 10px;
+  box-shadow:cornflowerblue 0px 0px 10px;
   border-radius: 30px;
 }
 
@@ -182,7 +181,8 @@ body {
 
 
 .p_desc{
-    margin:0px 0px 10px 0px;
+  text-align: left;
+    margin:0px 0px 20px 0px;
 }
 
 
@@ -209,10 +209,11 @@ body {
 } 
 
 .achieve_item {
-  margin: 10px;
+  height: fit-content;
+  margin-bottom: 20px;
   padding: 15px;
   border-radius: 20px;
-  box-shadow:cornflowerblue/*#146efd*/ 0px 0px 10px;
+  box-shadow:cornflowerblue 0px 0px 10px;
 }
 
 .a_p {
@@ -259,12 +260,12 @@ body {
 .linksimages{
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
 
 }
 
 body.dark-mode {
-  background: #0d0e0f  /*#141414 #0F0529 */;
+  background: #0d0e0f ;
   color: #f2f2ff;
 }
 
@@ -280,7 +281,6 @@ body.dark-mode .nav_item {
 
 body.dark-mode .s_item{
     background: #212121;
-  /* box-shadow: #8236FD 0px 0px 5px;*/
 }
 
 body.dark-mode .p_tech_item{
@@ -333,6 +333,7 @@ body.dark-mode #pk{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 10px;
   }
     
   .project {
@@ -350,11 +351,11 @@ body.dark-mode #pk{
   }  
   
   .achieve_item {
-    margin: 0px 50px;
+    margin: 0px 50px 20px 50px;
   }
 
   .a_p{
-    font-size: 1.1em;
+    font-size: 1.2em;
   }
 
   .s_item{
