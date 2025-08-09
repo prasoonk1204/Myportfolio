@@ -283,7 +283,6 @@ body.dark-mode {
 
 body.dark-mode .header {
   color: #fff;
-    box-shadow: #8236FD 0px 0px 10px;
 }
 
 body.dark-mode .nav_item {
@@ -305,19 +304,6 @@ body.dark-mode .con{
 
 body.dark-mode .plink111{
     border: 1px solid white;
-}
-
-body.dark-mode .project{
-    box-shadow: #8236FD 0px 0px 10px;
-}
-
-body.dark-mode .achieve_item{
-    box-shadow: #8236FD 0px 0px 3px;
-}
-
-
-body.dark-mode #pk{
-  color:#8236FD;
 }
 
 .hhh {
